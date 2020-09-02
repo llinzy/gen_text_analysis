@@ -11,4 +11,7 @@ Preprocessing:
 
 Analysis: 
              1. bar charts demonstrating top 50 words per skill category
-             2. Scattershot comparing word occurrence strength within a skill category 
+             2. Scatterplot comparing word occurrence strength within a skill category 
+             3. Cluster plot demonstrating similarities between skill categories
+             
+           
