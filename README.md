@@ -2,7 +2,7 @@
 
 interactivate streamlit application: https://general-text-analysis.herokuapp.com/
 
-Data: job postings broken into skill categories as designated by ONET online.
+Data: online job postings broken into skill categories as designated by ONET online.
 Preprocessing: 
              1. emails removed using regex
              2. punctuation removed
