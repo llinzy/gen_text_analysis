@@ -83,12 +83,7 @@ st.altair_chart(c, use_container_width=True)
 
 df_full=pd.read_csv('df_full_10000.csv')
 
-
-st.write("""
-ID Skill Category Alignment by Ranked Order
-""")
-
-st.subheader('Ranked Ordered Skill List')
+st.subheader('Skill Category Alignment by Ranked Order for Each ID')
 default_type=st.selectbox('Select an ID', list(df_full.ids.unique()))
                           
                           
