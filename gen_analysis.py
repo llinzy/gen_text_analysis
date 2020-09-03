@@ -31,7 +31,7 @@ df=df.iloc[1:,:]
 df=df.rename(columns={'word':'skill_category'})
 df=df.iloc[:8,:]
 
-st.write('Words Having a Mean Occurence Greater Than 22 for each Skill Category')
+st.write('Words Having a Mean Occurence Greater Than 500 for each Skill Category')
 
 st.subheader('Data')
 default_type=st.multiselect('Select a Skill Category', list(df.skill_category.unique()), 
