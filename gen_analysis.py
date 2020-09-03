@@ -81,3 +81,16 @@ cls_Y=st.selectbox('Y', relevant_scaled.columns[:],index=4)
 c = alt.Chart(relevant_scaled).mark_circle().encode(x=cls_X, y=cls_Y)
 st.altair_chart(c, use_container_width=True)
 
+df_full=pd.read_csv('df_full.csv')
+df_full=df_full.iloc[:10000,1:]
+
+st.write("""
+ID Skill Category Alignment by Ranked Order
+""")
+
+st.subheader('Ranked Ordered Skill List')
+default_type=st.selectbox('Select an ID', list(df_full.ids.unique()))
+                          
+                          
+new_data=df_full[df_full.ids==default_type]
+st.write(new_data.iloc[:,1:])
