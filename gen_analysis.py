@@ -89,3 +89,12 @@ default_type=st.selectbox('Select an ID', list(df_full.ids.unique()))
                           
 new_data=df_full[df_full.ids==default_type]
 st.write(new_data.iloc[:,1:])
+
+cat_ranked_df_full=pd.read_csv('cat_ranked_df.csv')
+
+st.subheader('Top Ranked ID for each Skill Category')
+cat_ranked_df_full_default_type=st.selectbox('Select Skill Category', list(cat_ranked_df_full.ids.unique()))
+                          
+                          
+cat_ranked_df=cat_ranked_df_full_default_type[cat_ranked_df_full_default_type.ids==cat_ranked_df_full_default_type]
+st.write(cat_ranked_df.iloc[:,:])
